@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 // import Test from './New';
-import UseEffectTest, {} from "./UseEffectTest"
+import RouterSample from './RouterSample';
+// import UseEffectTest, {} from "./UseEffectTest"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +12,7 @@ root.render(
   // <React.StrictMode>
      /* <App />  */
     /* <Test /> */
-       <UseEffectTest/> 
+      //  <UseEffectTest/> 
+       <RouterSample/> 
   // </React.StrictMode>
 );

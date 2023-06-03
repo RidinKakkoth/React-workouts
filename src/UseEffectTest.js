@@ -30,32 +30,32 @@
 
 //=========================age prediction==================
 
-import { useEffect, useState } from "react";
-import Axios from 'axios'
+// import { useEffect, useState } from "react";
+// import Axios from 'axios'
 
-import React from 'react'
+// import React from 'react'
 
-function UseEffectTest() {
+// function UseEffectTest() {
 
-    const[name,setName]=useState("")
-    const [predictedAge,setPredictedAge]=useState(null)
+//     const[name,setName]=useState("")
+//     const [predictedAge,setPredictedAge]=useState(null)
 
-   const fechData=()=>{
-        Axios.get(`https://api.agify.io/?name=${name}`).then((res)=>{
-            setPredictedAge(res.data)
-        })
-    }
+//    const fechData=()=>{
+//         Axios.get(`https://api.agify.io/?name=${name}`).then((res)=>{
+//             setPredictedAge(res.data)
+//         })
+//     }
 
-  return (
-    <div>
-      <input type="text" onChange={(e)=>{setName(e.target.value)}} placeholder="enter ur name" />
-        <button onClick={fechData}>predict age</button>
-        <p>predicted age:{predictedAge?.name} </p>
-        <p>predicted age:{predictedAge?.age} </p>
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <input type="text" onChange={(e)=>{setName(e.target.value)}} placeholder="enter ur name" />
+//         <button onClick={fechData}>predict age</button>
+//         <p>predicted age:{predictedAge?.name} </p>
+//         <p>predicted age:{predictedAge?.age} </p>
+//     </div>
+//   )
+// }
 
-export default UseEffectTest
+// export default UseEffectTest
 
 
